@@ -2,6 +2,9 @@ name: 'Merge branch'
 description: 'A GitHub Action that manage git merge for any gitflow'
 author: Pavel Potapkin
 inputs:
+  token:
+    description: 'Github token'
+    required: true
   from_branch:
     description: 'Alias head_to_merge input'
     required: true
