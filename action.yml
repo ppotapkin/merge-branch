@@ -8,15 +8,6 @@ inputs:
   target_branch:
     description: 'The name of target branch to merge'
     required: true
-  head_to_merge:
-    description: 'The branch name or hash to merge.'
-    required: false
-  message:
-    description: 'Commit message'
-    required: false
-  disable_fastforwards:
-    description: 'Does not merge the branch if no files have been changed'
-    required: false
 runs:
   using: 'node20'
   main: 'dist/index.js'
