@@ -11,9 +11,9 @@ async function run() {
         const fromBranch = core.getInput('from_branch', { required: true });
         const toBranch = core.getInput('target_branch', { required: true });
 
-        core.info('repo: /repos/{${repo}/merges');
+        core.info(`repo: /repos/${repo}/merges`);
 
-        await octokit.request(`POST /repos/{${repo}/merges`, {
+        await octokit.request(`POST /repos/${repo}/merges`, {
             owner: owner,
             repo: repo,
             base: fromBranch,
